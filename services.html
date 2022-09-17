@@ -32,25 +32,24 @@
             "http://placehold.it/800x600"
         ], {duration: 5000, fade: 500});
 
-        $("#mapwrapper").gMap({ controls: false,
-            scrollwheel: false,
-            markers: [{     
-                latitude:40.7566,
-                longitude: -73.9863,
-            icon: { image: "images/marker.png",
-                iconsize: [44,44],
-                iconanchor: [12,46],
-                infowindowanchor: [12, 0] } }],
-            icon: { 
-                image: "images/marker.png", 
-                iconsize: [26, 46],
-                iconanchor: [12, 46],
-                infowindowanchor: [12, 0] },
-            latitude:40.7566,
-            longitude: -73.9863,
-            zoom: 14 });
+        
     });
     </script>
+    <style>
+        .logo {
+            content: url(images/logos/Logo22.png);
+            height: 4rem;
+            font-size: 3.75em;
+        }
+        .food{
+
+            content: url(images/logos/foodlogoRBG.png);
+            height: 6rem;
+            font-size: 3.75em;
+        }
+     
+
+    </style>
 </head><!--/head-->
 <body>
 <div id="preloader"></div>
@@ -67,24 +66,15 @@
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-gleam bounce-in"></span> IMPACT</h1></a>
+                <a class="logo" href="index.html"></a><span class="pe-7s-gleam bounce-in"><h1>The New Inn</h1></span> 
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="contact-us.html">Contact</a></li> 
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="project-item.html">Project Single</a></li>
-                            <li><a href="blog-item.html">Blog Single</a></li>
-                            <li class="active"><a href="404.html">404</a></li>
-                        </ul>
-                    </li>
+                    
                     <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
                 </ul>
             </div>
@@ -273,54 +263,30 @@
         <section id="bottom" class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 about-us-widget">
-                        <h4>Global Coverage</h4>
-                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin.</p>
-                    </div><!--/.col-md-3-->
+                    
 
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <h4>Company</h4>
                         <div>
                             <ul class="arrow">
-                                <li><a href="#">Company Overview</a></li>
+                                
                                 <li><a href="#">Meet The Team</a></li>
                                 <li><a href="#">Our Awesome Partners</a></li>
-                                <li><a href="#">Our Services</a></li>
+                                
                             </ul>
                         </div>
                     </div><!--/.col-md-3-->
 
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Latest Articles</h4>
-                        <div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <img class="widget-img" src="http://placehold.it/800x600" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
-                                    <small class="muted">Posted 14 April 2014</small>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <img class="widget-img" src="http://placehold.it/800x600" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
-                                    <small class="muted">Posted 14 April 2014</small>
-                                </div>
-                            </div>
-                        </div>  
-                    </div><!--/.col-md-3-->
+                   
 
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <h4>Come See Us</h4>
                         <address>
-                            <strong>Ace Towers</strong><br>
-                            New York Ave,<br>
-                            New York, 215648<br>
-                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 546 840654 05
+                            <strong>The New Inn</strong><br>
+                            Church Knowle<br>
+                            Wareham, BH20 5NQ<br>
+                            <span class="fa fa-phone"></span>&nbsp;<a href="tel:01929 480357" style="color:white">&nbsp;01929 480357</a>
+                            
                         </address>
                     </div> <!--/.col-md-3-->
                 </div>
@@ -331,7 +297,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        &copy; 2019 <a target="_blank" href="http://www.distinctivethemes.com" title="Premium Themes and Templates">Distinctive Themes</a>. All Rights Reserved.
+                        &copy; 2021 <a target="_blank" href="#" title="Premium Themes and Templates">Distinctive Themes</a>. All Rights Reserved.
                     </div>
                     <div class="col-sm-6">
                         <ul class="pull-right">
