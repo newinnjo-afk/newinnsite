@@ -68,10 +68,7 @@
         .disabled {
             pointer-events: none;
             opacity: 0.4;
-            background: url(images/outofstock.jpg);
-            background-repeat: no-repeat;
-            position: relative;
-            z-index: 2;
+            
         }
     </style>
 </head>
@@ -166,7 +163,7 @@
                     <div class="col-md-6">
                         <div class="blog">
                             <!--/.blog-item-->
-                            <div disabled class="blog-item disabled">
+                            <div class="blog-item disabled">
                                 <div class="blog-featured-image">
                                     <img class="img-responsive img-blog" src="images/bg/train.jpg" alt="" />
                                     <div class="overlay">
@@ -721,6 +718,11 @@
     <script src="js/jquery.twbsPagination.js"></script>
     <script src="js/paging.js"></script>
     <script src="js/chalk.js"></script>
+    <script>
+        if($(".blog-item").hasClass("disabled")){
+            alert("twat")
+        }
+    </script>
 </body>
 
 </html>
