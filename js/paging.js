@@ -1,41 +1,49 @@
-const pages = document.querySelectorAll("#first #further");
-const pageNumbersContainer = document.querySelector(".pagination pagination-lg");
+$('#pagination-demo').twbsPagination({
+	totalPages: 2,
+	// the current page that show on start
+	startPage: 1,
 
-if (pageNumbersContainer) {
+	// maximum visible pages
+	visiblePages: 2,
 
-	const createPagination = () => {
-	    pages.forEach((p, i) => {
-	        const pageNumber = document.createElement("div");
-	        pageNumber.classList.add("further-number");
-	        pageNumber.textContent = i + 1;
-	        pageNumber.addEventListener("click", () => {
-	            activatePage(i);
-	        })
+	initiateStartPageClick: true,
 
-	        pageNumbersContainer.appendChild(pageNumber);
-	    })
+	// template for pagination links
+	href: false,
 
-	    document.querySelector("#further-number").classList.add("active");
-	}
+	// variable name in href template for page number
+	hrefVariable: '{{number}}',
 
-	createPagination();
-
-	const pageNumbers = document.querySelectorAll(".pagination pagination-lg #further-number");
-
-	const activatePage = (pageNumber) => {
-	    pages.forEach(p => {
-	        p.classList.remove("active");
-	    })
-
-	    pages[pageNumber].classList.add("active");
-
-	    pageNumbers.forEach(p => {
-	        p.classList.remove("active");
-	    })
-
-	    pageNumbers[pageNumber].classList.add("active");
-
-	    window.scroll(0, 0);
-	}
+	// Text labels
+	first: 'First',
+	prev: 'Previous',
+	next: 'Next',
+	last: 'Last',
 	
-}
+
+	// carousel-style pagination
+	loop: false,
+
+	// callback function
+	onPageClick: function (event, page) {
+		$('.page-active').removeClass('page-active');
+		$('#page' + page).addClass('page-active');
+		window.scroll({
+			top: 0, 
+			left: 0, 
+			behavior: 'smooth' 
+		   });
+	},
+	
+
+	// pagination Classes
+	paginationClass: 'pagination',
+	nextClass: 'next',
+	prevClass: 'prev',
+	lastClass: 'last',
+	firstClass: 'first',
+	pageClass: 'page',
+	activeClass: 'active',
+	disabledClass: 'disabled'
+
+});

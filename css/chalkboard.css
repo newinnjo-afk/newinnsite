@@ -1,0 +1,103 @@
+body {
+    color: white;
+    background: #bfbfbf;
+    font-family: 'Amatic SC', cursive;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.classroom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.poster {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 2em;
+    width: 200px;
+    height: 300px;
+    padding: 1em 1em 0 .3em;
+    background-color: blue;
+}
+
+.chalk-board {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #282c2c;
+    border: 12px outset #9c6f3e;
+    min-width: 800px;
+    width: 90%;
+    height: 100%;
+}
+
+.items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.items li {
+    display: inline;
+    padding-right: 6px;
+    padding-left: 6px;
+    color: white;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.items #link {
+    background-image: url('../images/bg/mussels.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.disabled {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.percentage {
+    color: green;
+    font-size: large-font;
+}
+
+.total {
+    color: red;
+    font-size: large-font;
+}
+
+.menu {
+    font-size: 5em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.menu-item {
+    display: inline-block;
+    cursor: pointer;
+}
