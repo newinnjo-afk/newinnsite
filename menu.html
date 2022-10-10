@@ -194,8 +194,7 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                     </div>
                                     <p>salsa verde, fregola, broad beans, sun-dried tomato (411 kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="#">More details</a>
+                                        <a class="btn btn-outlined btn-primary" href="#">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -244,13 +243,14 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                     </a>
                                     <div class="entry-meta">
 
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span
-                                                    class="counter">14</span> Comments</a></span>
+                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
+                                                Comments</a></span>
                                     </div>
                                     <p>broccoli, asparagus, pink grapefruit, avocado, pomegranate, soya beans, mixed
                                         seeds, rice (894 kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="#">More details</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#crabmodal" id="crabbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -297,8 +297,8 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                     </p>
 
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="#">More details</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#whitemodal" id="whitebtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -324,8 +324,8 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                     </div>
                                     <p>wholemeal cobs and rouille (295kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="#">More details</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#boulmodal" id="boulbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +351,8 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                     </div>
                                     <p>seeded ginola bread toast (175kcal).</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="#">More details</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#chickmodal" id="chickbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -594,8 +595,8 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
                                         then our bed and breakfast accommodation is your ideal choice for a wonderful
                                         memorable holiday!</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.spurwing.info/">More details</a>
+                                        <a class="btn btn-outlined btn-primary" href="https://www.spurwing.info/">More
+                                            details</a>
                                     </div>
                                 </div>
                             </div>
@@ -650,7 +651,7 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
         </footer>
         <!--/#footer-->
     </div>
-    
+
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
@@ -669,19 +670,33 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
         $('#macbtn').click(function () {
             $('#mackrelmodal').modal('show')
         })
+        $('#crabbtn').click(function () {
+            $('#crabmodal').modal('show')
+        })
+        $('#whitebtn').click(function () {
+            $('#whitemodal').modal('show')
+        })
+        $('#boulbtn').click(function () {
+            $('#boulmodal').modal('show')
+        })
+        $('#chickbtn').click(function () {
+            $('#chickmodal').modal('show')
+        })
+
     </script>
 </body>
 <!------------------Mackerel Modal-->
-<div class="modal fade" id="mackrelmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+<div class="modal fade" style="top:300px" id="mackrelmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Mackerel Fillets</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">MACKEREL FILLETS</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <hr>
             <div class="modal-body">
                 <p>Caught off the coast of Ireland, these Smoked Mackerel Fillets taste simply wonderful.
                     They are hot smoked and richly flavoured with the soft textured flesh that melts in your mouth.</p>
@@ -693,5 +708,91 @@ Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, 
         </div>
     </div>
 </div>
-
+<div class="modal fade" style="top:300px" id="crabmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">CRAB SALAD</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>A variation of crab meat ceviche that originated in the Mobile, Alabama area and is still a regional
+                    seafood delicacy enjoyed today.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="whitemodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">WHITEBAIT FILLETS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Coated with flour and fried. Served with tartare sauce and salad.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="boulmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Traditional fish stew, with mussels, salmon and 
+                    haddock in a saffron & tomato broth, served with 
+                    fresh baguette and garlic rouille.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="chickmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Served with a red onion chutney & toasted croute.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
 </html>
