@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    color: #171313b5
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 50% 25%;
+    grid-template-rows: repeat(7, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+aside {
+    grid-row: span 7;
+}
+
+.page .div-child-main {
+    background: #f9f9f9;
+    box-shadow: 2px 2px 4px #ccc, -2px -2px 4px #ccc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.page h3 {
+    font-family: 'Marck Script', cursive;
+    font-size: 25px;
+}
+
+.color-red {
+    color: red;
+}
+
+.div-child-main div+p {
+    color: #9c9c9c;
+    line-height: 1.6;
+}
+
+img+div {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.page .div-child-main img {
+    width: 30%;
+    transform: scaleY(2.4);
+
+}
+
+/* @media (min-width: 750px) and (max-width: 1050px) {
+    .page .div-child-main img {
+        transform:scaleY(5)
+    }
+} */
+
+/* @media (max-width: 750px) {
+    .page .div-child-main img {
+        transform:scaleY(5)
+    }
+} */
+
+aside {
+    margin-left: 20px;
+}
+
+aside input {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+}
+
+.section-1 ul li {
+    position: relative;
+    padding-top: 10px;
+    color: #5a5a5a;
+    font-size: 15px;
+}
+
+.section-1 ul li:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.section-1 ul li:first-child:after {
+    content: "22";
+
+}
+
+.section-1 ul li:nth-child(2):after {
+    content: "25";
+}
+
+.section-1 ul li:nth-child(3):after {
+    content: "31";
+}
+
+.section-1 ul li:nth-child(4):after {
+    content: "45";
+}
+
+.section-1 ul li:nth-child(5):after {
+    content: "21";
+}
+
+.section-1 ul li:last-child:after {
+    content: "15";
+}
+
+.section-2>div {
+    display: flex;
+}
+
+.section-2 img {
+    width: 30%;
+    height: 100px;
+    border-radius: 6px;
+}
+
+.section-2 p {
+    font-size: 15px;
+}
+
+.section-2 p+div {
+    font-size: 12px;
+}
+
+.section-2 img+div {
+    margin-top: -20px;
+}
+
+.section-3 {
+    background: url("https://cdn.concreteplayground.com/content/uploads/2017/09/El-Camino-Cantina-Brunch-Build-Your-Own-Burrito-Huevos-Ranchos-2-1024x576.jpg");
+    width: 100%;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background-size: cover;
+
+}
+
+.section-3 h2 {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    font-size: 32px;
+
+}
+
+.section-3 span {
+    font-size: 40px;
+    color: red;
+    font-family: 'Marck Script', cursive;
+
+}
+
+.section-3 p {
+    color: white;
+}
+
+.section-3 button {
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: red;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section-3 button:hover {
+    opacity: .9;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-4 img {
+    margin-top: 20px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -25px;
+}
+
+.section-5 {
+    display: flex;
+    flex-flow: wrap column;
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+
+.section-5 .tags span {
+    display: inline-block;
+    background: #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.moved {
+    display: flex;
+    justify-content: center;
+}
+
+.moved span,
+a {
+    width: 40px;
+    height: 40px;
+    color: rgb(184, 184, 184);
+    background: transparent;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin: 35px 0px 35px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.moved span {
+    counter-increment: count;
+}
+
+.moved> :nth-child(2) {
+    background: red;
+    color: white;
+}
+
+.moved span::after {
+    content: counter(count);
+}
+
+footer {
+    position: relative;
+}
+
+footer img {
+    width: 100%;
+    height: 150px;
+    background-size: contain;
+    margin-top: 100px
+}
+
+.main-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8272e;
+    padding: 0px 20px;
+    width: 70%;
+    margin: auto;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: calc(30% / 2);
+}
+
+.section-foot-1 {
+    width: 50%;
+}
+
+.section-foot-1 h3 {
+    font-family: 'Marck Script', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.section-foot-1 p {
+    line-height: 1.5;
+    color: white;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.section-foot-2 {
+    background: #ea3d43;
+    padding: 10px;
+    width: 45%;
+    height: 65px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-foot-2 div:first-child {
+    color: white;
+    padding-left: 10px;
+}
+
+.section-foot-2 div:last-child {
+    height: 100%;
+    width: 35%;
+    background: #fff;
+    padding: 10px;
+    color: #ea3d43;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
