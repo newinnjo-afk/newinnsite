@@ -4,18 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="The New Inn at Church Knowle, Dorset, is a village inn set in a valley between the beautiful rolling Purbeck hills near Corfe Castle, ideally situated for pub walks and many local attractions. Serving traditional British food with a modern twist. The New Inn, Church Knowle is located on Tyneham Road, turn off the A351 just before Corfe Castle. We have a large private car park for your convenience.">
+    <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="keywords"
-        content="Tyneham village, Church Knowle, Kimmeridge, Wool, Sunday Roast, Carvery, Purbeck, Dorset, Corfe Castle, Corfe, Village, Traditional Inn, Inn, Pub, Food, Pub Food, Beer, Wine, Kids, Kids Food, Car Park, Seafood, Burns Night, Summer, Winter, Swanage, Wareham, Poole, British Cuisine, Fresh Food, Gluten Free, Christmas Party, Christmas Lunch, Traditional Christmas Dinner, Easter, Bank Holiday, Mothers Day, Fathers Day, New Years Day, Locally Farmed Meats, Classic Pub Food, Real Ale, Dorset Blue Vinny Cheese, Sandwiches, Meat Deli, Cheese, Vegetarian options, Gluten free food, Birthday Party, Jurassic Coast, Portland, Weymouth, Dorchester, Durdle Door, Tank Museum, Norden Farm, Camping, Campsite, Great atmosphere, Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, Quite, Village life, Country life, Dorset life, Broadchurch, Thomas Hardy, Swanage Railway, Steam railways, Walking, Walks">
-    <title>Menu | The New Inn, Church Knowle. Great Dorset Pub Food and Local Seafood</title>
+    <title>About Us | Impact By Distinctive Themes</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -30,7 +29,7 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             'use strict';
-            jQuery('single-page-slider').backstretch([
+            jQuery('#single-page-slider').backstretch([
                 "images/bg/pana.jpg",
                 "http://placehold.it/800x600",
                 "http://placehold.it/800x600"
@@ -53,19 +52,11 @@
             font-size: 3.75em;
         }
 
-        #single-page-slider {
-            background: url(images/bg/pana.jpg);
+        .cellar {
+            background: url(images/bg/winecellar.png);
             background-position: center center;
-            background-size: 100% 400px;
-
-        }
-
-        .page {
-            display: none;
-        }
-
-        .page-active {
-            display: block;
+            background-size: cover;
+            height: 400px;
         }
 
         .disabled {
@@ -73,17 +64,18 @@
             opacity: 0.4;
 
         }
-
-        .outofstock {
-            background: url(images/outofstock.jpg)
-        }
     </style>
 </head>
 <!--/head-->
 
 <body>
-    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
 
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+        <div id="search-wrapper">
+            <div class="container">
+                <input id="search-box" placeholder="Search">
+            </div>
+        </div>
         </div>
         <div class="container">
             <div class="navbar-header">
@@ -101,15 +93,9 @@
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="local.html">Local Venues</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact-us.html">Contact</a></li>
-                    <!-- <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="project-item.html">Project Single</a></li>
-                            <li><a href="blog-item.html">Blog Single</a></li>
-                            <li class="active"><a href="404.html">404</a></li>
-                        </ul>
-                    </li> -->
+
 
                 </ul>
             </div>
@@ -125,10 +111,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="center gap fade-down section-heading">
-                                    <h2 class="main-title">Our Menu</h2>
+                                    <h2 class="main-title">Some of the many dishes we do</h2>
                                     <hr>
-                                    <p>Please note that reservations are taken by phone only. So as to not cause
-                                        dissapointment</p>
+                                    <p>A selection of meals and starters we provide not to mention our selection of
+                                        ales, wines and
+                                        spirits.</p>
                                 </div>
                             </div>
                         </div>
@@ -142,472 +129,295 @@
     </section>
     <!--/#main-slider-->
 
-
-
     <div id="content-wrapper">
-        <section id="portfolio" class="white">
+        <section id="contact" class="white">
             <div class="container">
-                <p style="color:rgb(10, 9, 9)">Dorset is well known for its picturesque scenerary and beaches.
-                    Here are some attractions near to the New Inn.</p>
-                <ul class="pagination pagination-lg" id="pagination-demo">
-                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                    <li class="active"><a href="#" class="page-link">Starters</a></li>
-                    <li><a href="#" class="page-link">Mains</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
                 <div class="gap"></div>
-
-                <div class="row page" id="page1">
-                    <h2 class="center centered">STARTERS</h2>
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title">Menus</h2>
                     <hr>
-                    <div class="col-md-6">
-                        <div class="blog">
-                            <!--/.blog-item-->
-                            <!-- ADD the word disabled to the div class "blog-item" to blank it out = <div class="blog-item disabled">---------------->
-                            <div class="blog-item disabled">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/musselsCrop.jpg"
-                                        alt="" />
+                    <p>We are currently running off blackboards with daily specials.
+                        The menu below is a stable part of our current selection.
+                    </p>
+                </div>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 fade-up">
+                        <h3>Starters</h3>
+                        <p><strong>Whitebait</strong><br>
+                            <small>breaded whitebait with homemade tartar sauce and fresh salad.</small><br />
+                            <strong>Blue Vinny Soup</strong><br>
+                            <small>rich blue cheese soup served with bread roll.</small><br />
+                            <strong>Sardines</strong><br>
+                            <small>grilled sardines with lemon drressing and salad.</small><br />
+                            <strong>Crispy Duck Salad</strong><br>
+                            <small>oriental style fried duck on a bed of salad onion and cucumber
+                                with a homemaqde honey and sesame oil dressing.
+                            </small><br />
+                            <strong>Scallops</strong><br>
+                            <small>pan seared scallops in garlic butter set on abed of salad.</small><br />
+                            <strong>Mixed Seafood</strong><br>
+                            <small>deep fried and breaded scampi, prawn, squid, cod and whitebait
+                                with sweet chilli and tartar sauce.</small><br />
+                        </p>
+                        <div class="gap"></div>
+                        <h3>Mains</h3>
+                        <p><strong>Fish and Chips</strong><br>
+                            <small>8-10oz fillet in a golden batter served with chips, peas and tartar sauce
+                            </small><br />
+                            <strong>Breaded Scampi</strong><br>
+                            <small>whole tail scampi served with chips, peas and tartar sauce.</small><br />
+                            <strong>Liver and Bacon</strong><br>
+                            <small>pan fried lambs liver with onion and bacon in a rich gravy. Served with mashed potato 
+                                and veg.
+                            </small><br />
+                            <strong>Belly Pork</strong><br>
+                            <small>slow roasted belly pork served with black pudding, mash, red cabbage and chef's veg.
+                            </small><br />
+                            <strong>Steak and Blue Vinny Pie</strong><br>
+                            <small>with a puff pastry lid served with chips and chef's veg.
+                            </small><br />
+                            <strong>Chicken Curry</strong><br>
+                            <small>homemade chicken curry served with pilau rice and naan bread.
+                            </small><br />
+                            <strong>Roast of the Day</strong><br>
+                            <small>served with roasted potatoes and parsnips, homemade gravy, yorkshire pudding and 
+                                vegetables.
+                            </small><br />
+                            <strong>Whole Grilled Fish</strong><br>
+                            <h5>Whole Bream</h5>
+                            <h5>Whole Seabass</h5>
+                            <h5>Whole Plaice</h5>
+                            <small>grilled in butter, served with new potatoes and fresh vegetables.
+                            </small><br />
+                            <strong>Hake Morney</strong><br>
+                            <small>fillet of hake grilled in a rich cheese sauce served with new potatoes and chef's vegetables
+                            </small><br />
+                            <strong>Sirloin Steak</strong><br>
+                            <small>butcher's choice best of the west 8oz sirloin served with chips, battered onion rings and salad
+                            </small><br />
+                            <div class="gap"></div>
+                        <h3>Homemade Desserts</h3>
+                        <p>
+                            <ul>
+                                <li><strong>Creme Brulee</strong></li>
+                                <li><strong>Fruit Crumble</strong></li>
+                                <li><strong>Chocolate Brownie</strong></li>
+                                <li><strong>Sticky Toffee Pudding</strong></li>
+                                <li><strong>Mixed Icecreams</strong></li>
+                            </ul>
+                            
+                        </p>
+
+                        </p>
+                    </div><!-- col -->
+                    <div class="col-md-8 fade-up">
+                        <ul class="portfolio-filter fade-down center">
+                            <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a>
+                            </li>
+                            <li><a id="mains" class="btn btn-outlined btn-primary" href="#"
+                                    data-filter=".apps">Mains</a></li>
+                            <li><a class="btn btn-outlined btn-primary" href="#"
+                                    data-filter=".nature">Starters/snacks</a></li>
+                            <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Deserts</a>
+                            </li>
+                        </ul>
+                        <ul class="portfolio-items col-3 isotope fade-up">
+                            <li class="portfolio-item joomla apps isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/boul.png" alt="">
+                                    <h5 style="color:black">Bouillabaisse</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
-                                            href="images/meals/starters/musselsCrop.jpg" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                            href="images/meals/mains/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-comment">description</i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="#">
-                                        <h3 class="main-title">Mussels In White Wine Sauce</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-user"></i> <a href="#"><span class="counter">20,000</span>
-                                                Likes</a></span>
-                                    </div>
-                                    <p>salsa verde, fregola, broad beans, sun-dried tomato (411 kcal)</p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="#">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/mackreleCrop.jpg"
-                                        alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <!--STARTERS--------------------------------------------------------------------------->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/boul.png" alt="">
+                                    <h5 style="color:black">Bouillabaisse</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
-                                            href="images/meals/starters/mackerel.jpg" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                            href="images/meals/mains/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-comment">description</i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="https://www.tyneham.org.uk/">
-                                        <h3 class="main-title">Mackerel Fillets</h3>
-                                    </a>
-                                    <div class="entry-meta">
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
-                                                Comments</a></span>
-                                    </div>
-                                    <p>chorizo & potato salad, burnt apple purée (330 kcal)</p>
-                                    <div class="read-more-wrapper">
-                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
-                                            data-target="#mackrelmodal" id="macbtn">More details</button>
-                                        <!-- <a class="btn btn-outlined btn-primary"
-                                            href="https://www.tyneham.org.uk/">Link</a> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/crab.jpg" alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/boul.png" alt="">
+                                    <h5 style="color:black">Bouillabaisse</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
-                                            href="images/meals/starters/crab.jpg" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                            href="images/meals/mains/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-comment">description</i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="#">
-                                        <h3 class="main-title">Dressed Crab.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
-                                                Comments</a></span>
-                                    </div>
-                                    <p>broccoli, asparagus, pink grapefruit, avocado, pomegranate, soya beans, mixed
-                                        seeds, rice (894 kcal)</p>
-                                    <div class="read-more-wrapper">
-                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
-                                            data-target="#crabmodal" id="crabbtn">More details</button>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/boul.png" alt="">
+                                    <h5 style="color:black">Bouillabaisse</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/mains/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-comment">description</i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <!--/.blog-item-->
-
-                            <!-- <ul class="pagination pagination-lg">
-                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul> -->
-                            <!--/.pagination-->
-                        </div>
-                    </div>
-                    <!--/.col-md-8-->
-
-
-                    <div class="col-md-6">
-                        <div class="blog">
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/whiteBCrop.jpg"
-                                        alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <!-- / STARTERS--------------------------------------------------------------------------->
+                            
+                            
+                            <li class="portfolio-item bootstrap design isotope-item">
+                                <!-- deserts-->
+                                <div class="item-inner">
+                                    <img src="images/meals/deserts/mix.png" alt="">
+                                    <h5 style="color:black">Puddings</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/deserts/mix.png" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla design isotope-item">
+                                <!-- deserts-->
+                                <div class="item-inner">
+                                    <img src="images/meals/deserts/pana.jpg" alt="">
+                                    <h5 style="color:black">Panacota</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/deserts/pana.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla apps isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/crab.png" alt="">
+                                    <h5 style="color:black">Lobster</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/mains/crab.png" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item wordpress nature isotope-item">
+                                <!--Snacks-->
+                                <div class="item-inner">
+                                    <img src="images/meals/starters/mussels.jpg" alt="">
+                                    <h5 style="color:black">Mussels</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/mussels.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla apps isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner">
+                                    <img src="images/meals/mains/shank.jpg" alt="">
+                                    <h5 style="color:black">Lamb Shank</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/mains/shank.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <!--Snacks-->
+                                <div class="item-inner">
+                                    <img src="images/meals/starters/whitebait.jpg" alt="">
+                                    <h5 style="color:black">Whitebait</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
                                             href="images/meals/starters/whitebait.jpg" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                                class="fa fa-eye"></i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="#">
-                                        <h3 class="main-title">Whitebait.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-user"></i> <a href="#"><span class="counter">1400</span>
-                                                Likes</a></span>
-                                    </div>
-                                    <p>samphire, Tenderstem® broccoli, sun-dried tomatoes, chimichurri (889 kcal).
-                                    </p>
-
-                                    <div class="read-more-wrapper">
-                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
-                                            data-target="#whitemodal" id="whitebtn">More details</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/boulCrop.jpg"
-                                        alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item wordpress design isotope-item">
+                                <!-- deserts-->
+                                <div class="item-inner">
+                                    <img src="images/Deserts/cremb.jpg" alt="">
+                                    <h5 style="color:black">Fruit bowls</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
-                                            href="images/meals/starters/boul.png" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                            href="images/Deserts/cremb.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="#">
-                                        <h3 class="main-title">Bouillabaisse</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-user"></i> <a href="#"><span class="counter">12,000</span>
-                                                Likes</a></span>
-                                    </div>
-                                    <p>wholemeal cobs and rouille (295kcal)</p>
-                                    <div class="read-more-wrapper">
-                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
-                                            data-target="#boulmodal" id="boulbtn">More details</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/meals/starters/livpatCrop.jpg"
-                                        alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla apps isotope-item">
+                                <!--Mains-->
+                                <div class="item-inner disabled">
+                                    <img src="images/meals/mains/boul.png" alt="">
+                                    <h5 style="color:black">Bouillabaisse</h5>
                                     <div class="overlay">
                                         <a class="preview btn btn-outlined btn-primary"
-                                            href="images/meals/starters/livpat.jpg" rel="prettyPhoto"><i
-                                                class="fa fa-link"></i></a>
+                                            href="images/meals/mains/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-comment">description</i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="#">
-                                        <h3 class="main-title">Chicken Liver Parfait.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span
-                                                    class="counter">1200</span>
-                                                Likes</a></span>
-                                    </div>
-                                    <p>seeded ginola bread toast (175kcal).</p>
-                                    <div class="read-more-wrapper">
-                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
-                                            data-target="#chickmodal" id="chickbtn">More details</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-
-
-                            <!--/.pagination-->
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <!--/.row 1--------------------------------------------------------------------------------------->
-
-                <div class="row page" id="page2">
-                    <h2 class="center centered">MAINS</h2>
-                    <hr>
-                    <div class="col-md-6">
-                        <div class="blog">
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/bluepool.jpg" alt="" />
+                            </li>
+                            <!--/.portfolio-item-->
+                            <li class="portfolio-item joomla nature isotope-item">
+                                <!--Snacks-->
+                                <div class="item-inner">
+                                    <img src="images/meals/starters/mackerel.jpg" alt="">
+                                    <h5 style="color:black">Mackerel</h5>
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/bluepool.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/mackerel.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-eye"></i></a>
                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <a href="https://bluepooltearooms.co.uk/">
-                                        <h3 class="main-title">The Blue Pool</h3>
-                                    </a>
-                                    <div class="entry-meta">
+                            </li>
+                            <!--/.portfolio-item-->
+                            
+                        </ul>
 
-                                        <span><i class="fa fa-user"></i> <a href="#"><span class="counter">12,000</span>
-                                                Likes</a></span>
-                                    </div>
-                                    <p>The Blue Pool Nature Reserve & Tearooms forms part of the Furzebrook Estate which
-                                        traces its history back nearly 400 years.
-                                        Established in 1935 the Tearooms opened their doors to the public nearly 100
-                                        years ago! A collection of beautiful old buildings
-                                        packed with art deco / art nouveau charm and set under a Canadian cedar shingle
-                                        roof.
-                                        The reserve represents a fragile environment which was recognised for its
-                                        uniqueness and received protection from exploitation
-                                        well before global ecological damage became a public concern.
-                                    </p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://bluepooltearooms.co.uk/">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/golfclub.jpg" alt="" />
-                                    <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/golfclub.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <a href="https://www.purbeckgolf.co.uk/">
-                                        <h3 class="main-title">Isle of Purbeck Golf Club.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
-                                                Comments</a></span>
-                                    </div>
-                                    <p>
-                                        We are excited to have David Langheim aboard to lead the green staff and bring
-                                        his extensive knowledge and skills to the
-                                        Isle of Purbeck Golf Club. David has over 37 years of experience in all aspects
-                                        of modern course management/equipment and
-                                        irrigation and is currently employed at Wimbledon Park Golf Club. In April 2012,
-                                        David achieved the qualification of Master
-                                        Greenkeeper status, being only the 61st Course Manager to be presented with this
-                                        award worldwide. Currently, there are only 80
-                                        Master Greenkeepers worldwide. A very impressive achievement.
-                                    </p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.purbeckgolf.co.uk/">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/dorsetgolf.jpg" alt="" />
-                                    <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/dorsetgolf.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <a href="https://www.dorsetgolfresort.com/">
-                                        <h3 class="main-title">Dorset Golf Resort.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-comment"></i> <a
-                                                href="https://www.dorsetgolfresort.com/"><span class="counter">14</span>
-                                                Comments</a></span>
-                                    </div>
-                                    <p>Rated in the TOP 150 English Courses, the Lakeland, Parkland and Woodland at “The
-                                        Dorset” were designed by the prolific course
-                                        designer Martin Hawtree. Hawtree has received international acclaim for his
-                                        excellent work re-designing Royal Birkdale for
-                                        the British Open and his more recent design of the 5 Star Trump International
-                                        Links in Aberdeen for Donald Trump in Scotland.
-                                        With these projects under his belt, Martin Hawtree is considered one of the best
-                                        course designers in the world today having also
-                                        added his touches to St Andrews when he redesigned holes on behalf of the R&A.
-                                        This means in design terms, the courses here at
-                                        “The Dorset” have a pedigree that is undeniable.</p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.dorsetgolfresort.com/">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-
-                            <!-- <ul class="pagination pagination-lg">
-                                <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                            </ul> -->
-                            <!--/.pagination-->
-                        </div>
-                    </div>
-                    <!--/.col-md-8-->
-
-
-                    <div class="col-md-6">
-                        <div class="blog">
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/creech.jpg" alt="" />
-                                    <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/creech.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <a href="https://www.eastcreechfarm.co.uk/">
-                                        <h3 class="main-title">East Creech Farm.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-user"></i> <a href="#"><span class="counter">1400</span>
-                                                Likes</a></span>
-                                    </div>
-
-                                    <p>The Farm Cottages and Campsite are ideally situated for the Isle of Purbeck,
-                                        (Corfe Castle, Studland, Swanage, Kimmeridge) Lulworth Cove,
-                                        Weymouth and Poole Harbour.It is conveniently located for day-trips; coastal or
-                                        land-based recreational pursuits.
-                                        The wide range of pubs and restaurants close by in Wareham, make East Creech
-                                        Farm Cottages and Campsite a perfect choice when
-                                        considering where to stay.Kimmeridge Bay is just 3 miles away; its outstanding
-                                        geology represents 185 million years of history.
-                                        Other beauty spots, are Lulworth Cove, and "Durdle-Door" - a solid arch of
-                                        wave-sculptured rock, rising out of the sea are just
-                                        along the coast.</p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.eastcreechfarm.co.uk/">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/campingclub.jpg" alt="" />
-                                    <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/campingclub.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <a href="https://www.campingandcaravanningclub.co.uk/">
-                                        <h3 class="main-title">Camping and Caravaning Club.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
-                                                Comments</a></span>
-                                    </div>
-                                    <p>Whether you're a seasoned camper, caravanner or motor caravanner, or new to
-                                        taking your accommodation with you, joining the
-                                        Club will help you to get more from your caravanning and camping holidays. As
-                                        the world's oldest and largest Club for all forms
-                                        of camping, and with over 400,000 members, the facilities and services are
-                                        developed by people who share a love of camping and
-                                        caravanning.</p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.campingandcaravanningclub.co.uk/">More details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-                            <div class="blog-item">
-                                <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/spurwing.jpg" alt="" />
-                                    <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/spurwing.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <a href="https://www.spurwing.info/">
-                                        <h3 class="main-title">Spurwing Guest House.</h3>
-                                    </a>
-                                    <div class="entry-meta">
-
-                                        <span><i class="fa fa-comment"></i> <a href="https://www.spurwing.info/"><span
-                                                    class="counter">14</span> Comments</a></span>
-                                    </div>
-                                    <p>We are Steph and Richard, owners of Spurwing Guest House. We pride ourselves on
-                                        our bed and breakfast Dorset being a friendly,
-                                        popular and comfortable chalet-style bungalow, with ground floor accommodation,
-                                        a large garden with pond and off-road parking.
-                                        We are conveniently located 5 minutes walk away from the train station and 15
-                                        minutes walk away from the historic Saxon market town of
-                                        Wareham, offering a good selection of shops, pubs and restaurants.
-                                        If you are dreaming of safe sandy beaches, exciting visits to nearby tourist
-                                        attractions such as Corfe Castle,
-                                        Monkey World or Bovington Tank Museum, scenic walks along the stunning Jurassic
-                                        coast, or any combination of these,
-                                        then our bed and breakfast accommodation is your ideal choice for a wonderful
-                                        memorable holiday!</p>
-                                    <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="https://www.spurwing.info/">More
-                                            details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/.blog-item-->
-
-
-                            <!--/.pagination-->
-                        </div>
-                    </div>
-                </div>
+                    </div><!-- col -->
+                </div><!-- row -->
+                <div class="gap"></div>
             </div>
-
         </section>
-        <footer id="footer" class="">
+
+        <!--/#blog-->
+    </div>
+
+    <div id="footer-wrapper">
+
+        <section id="bottom" class="">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-sm-4">
+
+                    <!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
                         <h4>Company</h4>
                         <div>
                             <ul class="arrow">
@@ -618,7 +428,11 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <!--/.col-md-3-->
+
+                    <!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
                         <h4>Come See Us</h4>
                         <address>
                             <strong>The New Inn</strong><br>
@@ -629,19 +443,24 @@
 
                         </address>
                     </div>
+                    <!--/.col-md-3-->
+                </div>
+            </div>
+        </section>
+        <!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        &copy; 2019 Your Site Name. All Rights Reserved. <a
+                            href="https://templatemag.com/bootstrap-templates/">Bootstrap templates</a> by TemplateMag.
+                    </div>
                     <div class="col-sm-4">
                         <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"
-                                        style="background:orange; width:40px; height:40px; text-align: center; font-size: 30px;"></i></a>
-                            </li>
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
                             <!--#gototop-->
                         </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; 2021 <a target="_blank" href="#" title="Premium Themes and Templates">Distinctive
-                            Themes</a>. All Rights Reserved.
                     </div>
                 </div>
             </div>
@@ -649,23 +468,13 @@
         <!--/#footer-->
     </div>
 
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/jquery.twbsPagination.js"></script>
-    <script src="js/paging.js"></script>
     <script>
-        if ($(".blog-item").hasClass("disabled")) {
-            alert("Any items faded out are presently unavaialble.")
-        }
-
-    </script>
-    <script>
-        $('#macbtn').click(function () {
-            $('#mackrelmodal').modal('show')
+        $('#boulbtn').click(function () {
+            $('#boulmodal').modal('show')
         })
         $('#crabbtn').click(function () {
             $('#crabmodal').modal('show')
@@ -681,9 +490,9 @@
         })
 
     </script>
+
 </body>
-<!------------------Mackerel Modal-->
-<div class="modal fade" style="top:300px" id="mackrelmodal" tabindex="-1" role="dialog"
+<div class="modal fade" style="top:300px" id="boulmodal" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -696,94 +505,8 @@
             <hr>
             <div class="modal-body">
                 <p>Caught off the coast of Ireland, these Smoked Mackerel Fillets taste simply wonderful.
-                    They are hot smoked and richly flavoured with the soft textured flesh that melts in your mouth.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" style="top:300px" id="crabmodal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">CRAB SALAD</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <hr>
-            <div class="modal-body">
-                <p>A variation of crab meat ceviche that originated in the Mobile, Alabama area and is still a regional
-                    seafood delicacy enjoyed today.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" style="top:300px" id="whitemodal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">WHITEBAIT FILLETS</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <hr>
-            <div class="modal-body">
-                <p>Coated with flour and fried. Served with tartare sauce and salad.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" style="top:300px" id="boulmodal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <hr>
-            <div class="modal-body">
-                <p>Traditional fish stew, with mussels, salmon and
-                    haddock in a saffron & tomato broth, served with
-                    fresh baguette and garlic rouille.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" style="top:300px" id="chickmodal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <hr>
-            <div class="modal-body">
-                <p>Served with a red onion chutney & toasted croute.</p>
+                    They are hot smoked and richly flavoured with the soft textured flesh that melts in your mouth.
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

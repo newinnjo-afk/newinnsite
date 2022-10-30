@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <meta name="keywords"
         content="Tyneham village, Church Knowle, Kimmeridge, Wool, Sunday Roast, Carvery, Purbeck, Dorset, Corfe Castle, Corfe, Village, Traditional Inn, Inn, Pub, Food, Pub Food, Beer, Wine, Kids, Kids Food, Car Park, Seafood, Burns Night, Summer, Winter, Swanage, Wareham, Poole, British Cuisine, Fresh Food, Gluten Free, Christmas Party, Christmas Lunch, Traditional Christmas Dinner, Easter, Bank Holiday, Mothers Day, Fathers Day, New Years Day, Locally Farmed Meats, Classic Pub Food, Real Ale, Dorset Blue Vinny Cheese, Sandwiches, Meat Deli, Cheese, Vegetarian options, Gluten free food, Birthday Party, Jurassic Coast, Portland, Weymouth, Dorchester, Durdle Door, Tank Museum, Norden Farm, Camping, Campsite, Great atmosphere, Great staff, First class service, Friendly, Warm, Traditional, Thatched, Stone, Quite, Village life, Country life, Dorset life, Broadchurch, Thomas Hardy, Swanage Railway, Steam railways, Walking, Walks">
-    <title>Local | The New Inn, Church Knowle. Great Dorset Pub Food and Local Seafood</title>
+    <title>Menu | The New Inn, Church Knowle. Great Dorset Pub Food and Local Seafood</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
@@ -31,7 +31,7 @@
         jQuery(document).ready(function ($) {
             'use strict';
             jQuery('single-page-slider').backstretch([
-                "images/bg/CCDorset.png",
+                "images/bg/pana.jpg",
                 "http://placehold.it/800x600",
                 "http://placehold.it/800x600"
             ], { duration: 5000, fade: 500 });
@@ -53,15 +53,8 @@
             font-size: 3.75em;
         }
 
-        .cellar {
-            background: url(images/bg/winecellar.png);
-            background-position: center center;
-            background-size: cover;
-            height: 400px;
-        }
-
         #single-page-slider {
-            background: url(images/bg/CCDorset.jpg);
+            background: url(images/bg/pana.jpg);
             background-position: center center;
             background-size: 100% 400px;
 
@@ -74,12 +67,21 @@
         .page-active {
             display: block;
         }
+
+        .disabled {
+            pointer-events: none;
+            opacity: 0.4;
+
+        }
+
+        .outofstock {
+            background: url(images/outofstock.jpg)
+        }
     </style>
 </head>
 <!--/head-->
 
 <body>
-
     <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
 
         </div>
@@ -99,9 +101,15 @@
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="local.html">Local Venues</a></li>
-                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact-us.html">Contact</a></li>
-
+                    <!-- <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="project-item.html">Project Single</a></li>
+                            <li><a href="blog-item.html">Blog Single</a></li>
+                            <li class="active"><a href="404.html">404</a></li>
+                        </ul>
+                    </li> -->
 
                 </ul>
             </div>
@@ -117,9 +125,10 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="center gap fade-down section-heading">
-                                    <h2 class="main-title">Things to see and do</h2>
+                                    <h2 class="main-title">Our Menu</h2>
                                     <hr>
-
+                                    <p>Please note that reservations are taken by phone only. So as to not cause
+                                        dissapointment</p>
                                 </div>
                             </div>
                         </div>
@@ -133,109 +142,109 @@
     </section>
     <!--/#main-slider-->
 
+
+
     <div id="content-wrapper">
-        <section id="blog" class="white ">
+        <section id="portfolio" class="white">
             <div class="container">
                 <p style="color:rgb(10, 9, 9)">Dorset is well known for its picturesque scenerary and beaches.
                     Here are some attractions near to the New Inn.</p>
+                <ul class="pagination pagination-lg" id="pagination-demo">
+                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="active"><a href="#" class="page-link">Starters</a></li>
+                    <li><a href="#" class="page-link">Mains</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
                 <div class="gap"></div>
 
                 <div class="row page" id="page1">
+                    <h2 class="center centered">STARTERS</h2>
+                    <hr>
                     <div class="col-md-6">
                         <div class="blog">
                             <!--/.blog-item-->
-                            <div class="blog-item">
+                            <!-- ADD the word disabled to the div class "blog-item" to blank it out = <div class="blog-item disabled">---------------->
+                            <div class="blog-item disabled">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/train.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/musselsCrop.jpg"
+                                        alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/train.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/musselsCrop.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="https://www.swanagerailway.co.uk/">
-                                        <h3 class="main-title">Swanage Railway</h3>
+                                    <a href="#">
+                                        <h3 class="main-title">Mussels In White Wine Sauce</h3>
                                     </a>
                                     <div class="entry-meta">
 
                                         <span><i class="fa fa-user"></i> <a href="#"><span class="counter">20,000</span>
                                                 Likes</a></span>
                                     </div>
-                                    <p>The heritage railway attraction operates full-size steam and diesel passenger
-                                        trains along the five and a half miles of line from Norden to
-                                        Corfe Castle and down to the Victoria seaside town of Swanage.
-                                        The line has stations at Corfe Castle and Harman’s Cross as well as a halt at
-                                        Herston, on the outskirts of Swanage.
-                                        There are refreshment buffets at
-                                        Norden and Swanage stations with picnic tables at most of the stations so you
-                                        can soak up the atmosphere.</p>
+                                    <p>salsa verde, fregola, broad beans, sun-dried tomato (411 kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.swanagerailway.co.uk/">Link</a>
+                                        <a class="btn btn-outlined btn-primary" href="#">More details</a>
                                     </div>
                                 </div>
                             </div>
                             <!--/.blog-item-->
                             <div class="blog-item">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/tyneham.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/mackreleCrop.jpg"
+                                        alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/tyneham.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/mackerel.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
                                     <a href="https://www.tyneham.org.uk/">
-                                        <h3 class="main-title">Tyneham Village.</h3>
+                                        <h3 class="main-title">Mackerel Fillets</h3>
                                     </a>
                                     <div class="entry-meta">
                                         <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
                                                 Comments</a></span>
                                     </div>
-                                    <p>Tyneham Village in Dorset has been deserted for over 60 years, since the second
-                                        world war. Before that it was an idyllic countryside village,
-                                        only a couple of miles from the sea and the delightful Worbarrow Bay. It had
-                                        it's own school, church and post office, several farms and lots
-                                        of cottages and the mansion called Tyneham House, or the Great House as it was
-                                        known. Life for the villagers was idyllic and simple.
-                                        There was no electricity or running water but it was still a lovely place to
-                                        live, free from the trouble and strife of the outside world.
-                                        All this changed just before the Christmas of 1943 when the villagers were told
-                                        they must leave temporarily,
-                                        however they have not been allowed to return to this day and the village of
-                                        Tyneham has remained as if frozen in time for the last 60 years.
-                                        Tyneham History.</p>
+                                    <p>chorizo & potato salad, burnt apple purée (330 kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.tyneham.org.uk/">Link</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#mackrelmodal" id="macbtn">More details</button>
+                                        <!-- <a class="btn btn-outlined btn-primary"
+                                            href="https://www.tyneham.org.uk/">Link</a> -->
                                     </div>
                                 </div>
                             </div>
+
                             <!--/.blog-item-->
                             <div class="blog-item">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/tank.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/crab.jpg" alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/tank.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/crab.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="https://tankmuseum.org/">
-                                        <h3 class="main-title">The Tank Museum.</h3>
+                                    <a href="#">
+                                        <h3 class="main-title">Dressed Crab.</h3>
                                     </a>
                                     <div class="entry-meta">
 
-                                        <span><i class="fa fa-comment"></i> <a href="https://tankmuseum.org/"><span
-                                                    class="counter">14</span> Comments</a></span>
+                                        <span><i class="fa fa-comment"></i> <a href="#"><span class="counter">14</span>
+                                                Comments</a></span>
                                     </div>
-                                    <p>The museum houses 300 military machines, representing the key battles of every
-                                        major conflict since the First World War.
-                                        Our moving exhibitions tell the story of this British invention; from the mud of
-                                        the Somme to the beaches of Normandy and the deserts of
-                                        Iraq – featuring powerful stories from the soldiers that fought in them.</p>
+                                    <p>broccoli, asparagus, pink grapefruit, avocado, pomegranate, soya beans, mixed
+                                        seeds, rice (894 kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="https://tankmuseum.org/">Link</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#crabmodal" id="crabbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -261,99 +270,83 @@
                             <!--/.blog-item-->
                             <div class="blog-item">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/CCDorset.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/whiteBCrop.jpg"
+                                        alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/CCDorset.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/whitebait.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="https://www.nationaltrust.org.uk/corfe-castle">
-                                        <h3 class="main-title">Corfe Castle.</h3>
+                                    <a href="#">
+                                        <h3 class="main-title">Whitebait.</h3>
                                     </a>
                                     <div class="entry-meta">
 
                                         <span><i class="fa fa-user"></i> <a href="#"><span class="counter">1400</span>
                                                 Likes</a></span>
                                     </div>
-                                    <p>Walk in the footsteps of the castle builders, follow the Purbeck Ridgeway from
-                                        Corfe Castle to the sea or discover
-                                        wildlife and history on Hartland Moor.
+                                    <p>samphire, Tenderstem® broccoli, sun-dried tomatoes, chimichurri (889 kcal).
                                     </p>
-                                    <p>October half term is the perfect time to get outside with the family and create
-                                        unforgettable autumn moments,
-                                        or step inside the houses in our care to
-                                        discover lots more activities to join.</p>
+
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.nationaltrust.org.uk/corfe-castle">Link</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#whitemodal" id="whitebtn">More details</button>
                                     </div>
                                 </div>
                             </div>
                             <!--/.blog-item-->
                             <div class="blog-item">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/mgar.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/boulCrop.jpg"
+                                        alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/mgar.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/boul.png" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="https://www.margaretgreenanimalrescue.org.uk/">
-                                        <h3 class="main-title">Margaret Green Animal rescue</h3>
+                                    <a href="#">
+                                        <h3 class="main-title">Bouillabaisse</h3>
                                     </a>
                                     <div class="entry-meta">
 
                                         <span><i class="fa fa-user"></i> <a href="#"><span class="counter">12,000</span>
                                                 Likes</a></span>
                                     </div>
-                                    <p>We promise to make sure animal welfare is at the heart of every decision we make
-                                        and we will always act in the animal’s best interest.
-                                        We firmly believe that every animal deserves to live its life free from distress
-                                        and pain and enjoy physical and psychological stimulation.
-                                        Sadly, there are too many domestic pets being bred. This then leads to vast
-                                        numbers of abandoned and unwanted animals being placed into care.
-                                        Whilst in our centres, all animals live in facilities which are designed to
-                                        offer a living environment that is suitable for their needs and
-                                        enables them to act out their natural behaviour.
-                                        All the animals are able to enjoy exercise and are provided with lots of
-                                        enrichment activities.
-                                        The rescue dogs get to socialise in off-lead groups, which can really help with
-                                        their chance to be rehomed as they get used to other dogs.</p>
+                                    <p>wholemeal cobs and rouille (295kcal)</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.margaretgreenanimalrescue.org.uk">Link</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#boulmodal" id="boulbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
                             <!--/.blog-item-->
                             <div class="blog-item">
                                 <div class="blog-featured-image">
-                                    <img class="img-responsive img-blog" src="images/bg/monkeys.jpg" alt="" />
+                                    <img class="img-responsive img-blog" src="images/meals/starters/livpatCrop.jpg"
+                                        alt="" />
                                     <div class="overlay">
-                                        <a class="preview btn btn-outlined btn-primary" href="images/bg/monkeys.jpg"
-                                            rel="prettyPhoto"><i class="fa fa-link"></i></a>
+                                        <a class="preview btn btn-outlined btn-primary"
+                                            href="images/meals/starters/livpat.jpg" rel="prettyPhoto"><i
+                                                class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                                 <div class="blog-content">
-                                    <a href="https://monkeyworld.org/">
-                                        <h3 class="main-title">Monkey World.</h3>
+                                    <a href="#">
+                                        <h3 class="main-title">Chicken Liver Parfait.</h3>
                                     </a>
                                     <div class="entry-meta">
                                         <span><i class="fa fa-comment"></i> <a href="#"><span
                                                     class="counter">1200</span>
                                                 Likes</a></span>
                                     </div>
-                                    <p>Since its opening in 1987, Monkey World has rescued primates from all over the
-                                        world, assisting 27 governments to date.
-                                        In many cases, primates have ended up living thousands of miles from their
-                                        native home range, having been smuggled from the wild.
-                                        Most of the primates that live at Monkey World have been rescued from
-                                        circumstances of abuse or neglect and, subsequently,
-                                        suffer from a variety of physical and/or psychological health conditions..</p>
+                                    <p>seeded ginola bread toast (175kcal).</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary" href="https://monkeyworld.org/">Link</a>
+                                        <button type="button" class="btn btn-outlined btn-primary" data-toggle="modal"
+                                            data-target="#chickmodal" id="chickbtn">More details</button>
                                     </div>
                                 </div>
                             </div>
@@ -371,6 +364,8 @@
                 <!--/.row 1--------------------------------------------------------------------------------------->
 
                 <div class="row page" id="page2">
+                    <h2 class="center centered">MAINS</h2>
+                    <hr>
                     <div class="col-md-6">
                         <div class="blog">
                             <!--/.blog-item-->
@@ -403,7 +398,7 @@
                                     </p>
                                     <div class="read-more-wrapper">
                                         <a class="btn btn-outlined btn-primary"
-                                            href="https://bluepooltearooms.co.uk/">Link</a>
+                                            href="https://bluepooltearooms.co.uk/">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -437,7 +432,7 @@
                                     </p>
                                     <div class="read-more-wrapper">
                                         <a class="btn btn-outlined btn-primary"
-                                            href="https://www.purbeckgolf.co.uk/">Link</a>
+                                            href="https://www.purbeckgolf.co.uk/">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -473,7 +468,7 @@
                                         “The Dorset” have a pedigree that is undeniable.</p>
                                     <div class="read-more-wrapper">
                                         <a class="btn btn-outlined btn-primary"
-                                            href="https://www.dorsetgolfresort.com/">Link</a>
+                                            href="https://www.dorsetgolfresort.com/">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -528,7 +523,7 @@
                                         along the coast.</p>
                                     <div class="read-more-wrapper">
                                         <a class="btn btn-outlined btn-primary"
-                                            href="https://www.eastcreechfarm.co.uk/">Link</a>
+                                            href="https://www.eastcreechfarm.co.uk/">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -558,7 +553,7 @@
                                         caravanning.</p>
                                     <div class="read-more-wrapper">
                                         <a class="btn btn-outlined btn-primary"
-                                            href="https://www.campingandcaravanningclub.co.uk/">Link</a>
+                                            href="https://www.campingandcaravanningclub.co.uk/">More details</a>
                                     </div>
                                 </div>
                             </div>
@@ -594,8 +589,8 @@
                                         then our bed and breakfast accommodation is your ideal choice for a wonderful
                                         memorable holiday!</p>
                                     <div class="read-more-wrapper">
-                                        <a class="btn btn-outlined btn-primary"
-                                            href="https://www.spurwing.info/">Link</a>
+                                        <a class="btn btn-outlined btn-primary" href="https://www.spurwing.info/">More
+                                            details</a>
                                     </div>
                                 </div>
                             </div>
@@ -605,24 +600,9 @@
                             <!--/.pagination-->
                         </div>
                     </div>
-
-
-
-
                 </div>
-
-                <ul class="pagination pagination-lg" id="pagination-demo">
-                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                </ul>
-                <!-- <ul id="pagination-demo" class="pagination-lg pull-right"></ul> -->
-
             </div>
+
         </section>
         <footer id="footer" class="">
             <div class="container">
@@ -670,7 +650,6 @@
     </div>
 
 
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/plugins.js"></script>
@@ -678,6 +657,140 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.twbsPagination.js"></script>
     <script src="js/paging.js"></script>
+    <script>
+        if ($(".blog-item").hasClass("disabled")) {
+            alert("Any items faded out are presently unavaialble.")
+        }
+
+    </script>
+    <script>
+        $('#macbtn').click(function () {
+            $('#mackrelmodal').modal('show')
+        })
+        $('#crabbtn').click(function () {
+            $('#crabmodal').modal('show')
+        })
+        $('#whitebtn').click(function () {
+            $('#whitemodal').modal('show')
+        })
+        $('#boulbtn').click(function () {
+            $('#boulmodal').modal('show')
+        })
+        $('#chickbtn').click(function () {
+            $('#chickmodal').modal('show')
+        })
+
+    </script>
 </body>
+<!------------------Mackerel Modal-->
+<div class="modal fade" style="top:300px" id="mackrelmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">MACKEREL FILLETS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Caught off the coast of Ireland, these Smoked Mackerel Fillets taste simply wonderful.
+                    They are hot smoked and richly flavoured with the soft textured flesh that melts in your mouth.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="crabmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">CRAB SALAD</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>A variation of crab meat ceviche that originated in the Mobile, Alabama area and is still a regional
+                    seafood delicacy enjoyed today.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="whitemodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">WHITEBAIT FILLETS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Coated with flour and fried. Served with tartare sauce and salad.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="boulmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Traditional fish stew, with mussels, salmon and
+                    haddock in a saffron & tomato broth, served with
+                    fresh baguette and garlic rouille.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" style="top:300px" id="chickmodal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">BOUILLABAISSE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <p>Served with a red onion chutney & toasted croute.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
