@@ -1,10 +1,10 @@
 /*!
  * jQuery pagination plugin v1.4.2
- * http://josecebe.github.io/twbs-pagination/
+ * https://josecebe.github.io/twbs-pagination/
  *
  * Copyright 2014-2018, Eugene Simakin
  * Released under Apache 2.0 license
- * http://apache.org/licenses/LICENSE-2.0.html
+ * https://apache.org/licenses/LICENSE-2.0.html
  */
 (function ($, window, document, undefined) {
 
@@ -357,6 +357,7 @@
     $.fn.twbsPagination.noConflict = function () {
         $.fn.twbsPagination = old;
         return this;
+
     };
 
     $.fn.twbsPagination.version = "1.4.2";

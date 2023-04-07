@@ -1,10 +1,10 @@
 $('#pagination-demo').twbsPagination({
-	totalPages: 2,
+	totalPages: 3,
 	// the current page that show on start
 	startPage: 1,
 
 	// maximum visible pages
-	visiblePages: 2,
+	visiblePages: 3,
 
 	initiateStartPageClick: true,
 
@@ -19,7 +19,7 @@ $('#pagination-demo').twbsPagination({
 	prev: 'Previous',
 	next: 'Next',
 	last: 'Last',
-	
+
 
 	// carousel-style pagination
 	loop: false,
@@ -29,12 +29,12 @@ $('#pagination-demo').twbsPagination({
 		$('.page-active').removeClass('page-active');
 		$('#page' + page).addClass('page-active');
 		window.scroll({
-			top: 0, 
-			left: 0, 
-			behavior: 'smooth' 
-		   });
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
 	},
-	
+
 
 	// pagination Classes
 	paginationClass: 'pagination',
